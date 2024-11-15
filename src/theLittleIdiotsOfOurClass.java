@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Scanner;
 
 /**
@@ -18,6 +19,11 @@ public class theLittleIdiotsOfOurClass {
             System.out.println("Notes of students");
             notes[i] = sc.nextInt();
             sc.nextLine();
+        }
+        //affichage
+        for (int i = 0; i < nbr; i++) {
+            System.out.print(noms[i]+"\t : ");
+            System.out.println(notes[i]);
         }
     }
 }
